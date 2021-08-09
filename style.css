@@ -1,13 +1,13 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;  
+    box-sizing: border-box; 
 }
 
 body{
 
     font-family:"Lexend Deca";
-  
+    font-weight: 400px;
 }
 
 .container {
@@ -15,57 +15,51 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f2f2f2;
+    background-color: #f5f0f0;
 
 }
 .Sub-container{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: nowrap;
     width: 80%;
-    padding: 80px;
-    background-color: #f2f2f2;
+    padding: 120px;
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
+    
+
 }  
 
 .col1 {
 
-    background-color: #e28528;
+    background-color: #E28525;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    padding: 50px 30px ;
+    padding: 50px 60px ;
 }
-
-.col1 a{
-    color:#e28528;
-}
-
 
 .col2 {
-    background-color: #026972;
-    padding: 50px 30px ;
+    background-color: #016972;
+    padding: 50px 60px ;
 
 }
-.col2 a{
-    color:#026972;
-}
+
 .col3 {
 
-    background-color: #0aa16c;
+    background-color: #00403F;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    padding: 50px 30px ;
+    padding: 50px 60px ;
     
-}
-
-.col3 a{
-    color:#004040;
 }
 
 h1{
 
-    color: white;
-    font-weight: 500;
+    color: rgba(255, 255, 255, 0.87);
+    font-weight:700;
+    font-size: 2.2rem;
     font-family: "Big Shoulders Display";
     margin: 25px 0;
 
@@ -73,9 +67,11 @@ h1{
 
 p{
     margin-bottom: 80px;
-    font-size: 14px;
-    color: white;
-    line-height: 2;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.521);
+    line-height: 1.8;
+  
+    
 }
 
 a {
@@ -85,9 +81,34 @@ a {
     padding:10px 20px;
     font-size: 1em;  
 }
+.button3:hover, .button2:hover, .button1:hover{
+    border: 1px solid white;
+    color: white;
+}
+
+.button1:hover{
+    background-color: hsl(31, 77%, 52%);
+}
+.button2:hover{
+    background-color: hsl(184, 100%, 22%);
+}
+.button3:hover{
+    background-color: hsl(179, 100%, 13%);
+}
+
+.col1 a{
+    color:#E28525;
+}
+.col2 a{
+    color:#016972;
+}
+.col3 a{
+    color:#00403F;
+}
 
 
 @media (max-width:600px){
+
     .Sub-container{
         display: flex;
         flex-wrap: wrap;
@@ -100,7 +121,6 @@ a {
        
         height: auto;
       
-
     }
     .col1 {
 
